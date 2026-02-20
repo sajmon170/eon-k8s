@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eon-bootstrap
+  labels:
+      app: boostrap-node
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bootstrap-node
+  template:
+    metadata:
+      labels:
+        app: bootstrap-node
+    spec:
+      containers:
+      - name: eon-client
+        image: sajmon/eon-client
+        ports:
+        - containerPort: 22137
