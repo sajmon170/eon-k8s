@@ -5,6 +5,8 @@ metadata:
   labels:
     app: bootstrap-node
 spec:
+  type: ClusterIP
+  clusterIP: 10.96.0.1
   ports:
   - port: 22137
     protocol: TCP
