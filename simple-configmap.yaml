@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: simple-wait
+data:
+  script:
+    - !Wait
+      time: 10s
