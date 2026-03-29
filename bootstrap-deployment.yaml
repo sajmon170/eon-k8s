@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eon-bootstrap
+  name: bootstrap-deployment
   labels:
       app: boostrap-node
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bootstrap-node
+      app: bootstrap-deployment
   template:
     metadata:
       labels:
-        app: bootstrap-node
+        app: bootstrap-deployment
     spec:
       containers:
       - name: eon-client
