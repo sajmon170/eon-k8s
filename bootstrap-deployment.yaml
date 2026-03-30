@@ -17,5 +17,12 @@ spec:
       containers:
       - name: eon-client
         image: sajmon/eon-client
+        command: [
+          "eon-client",
+          "--stdout",
+          "--log-level", "debug",
+          "--bootstrap-mode",
+          "--secret-key-seed", "1"
+        ]
         ports:
         - containerPort: 22137
