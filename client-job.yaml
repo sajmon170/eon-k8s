@@ -1,0 +1,24 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: client-simple-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: eon-client
+        image: sajmon/eon-client
+        command: ["eon-client",  "--script-file", "/mnt/scripts/script.yaml"]
+        volumeMounts:
+        - name: scripts
+          mountPath: "/mnt/scripts"
+          readOnly: true
+      volumes:
+      - name: scripts
+        configMap:
+          name: simple-wait
+          items:
+          - key: "simple.yaml"
+            path: "simple-wait-script"
+      restartPolicy: Never
+  backoffLimit: 4
