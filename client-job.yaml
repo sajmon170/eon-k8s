@@ -8,7 +8,12 @@ spec:
       containers:
       - name: eon-client
         image: sajmon/eon-client
-        command: ["eon-client",  "--script-file", "/mnt/scripts/script.yaml"]
+        command: [
+          "eon-client",
+          "--stdout",
+          "--log-level", "debug",
+          "--script-file", "/mnt/scripts/script.yaml"
+        ]
         volumeMounts:
         - name: scripts
           mountPath: "/mnt/scripts"
