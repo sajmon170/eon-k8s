@@ -12,7 +12,7 @@ spec:
           "eon-client",
           "--stdout",
           "--log-level", "debug",
-          "--script-path", "/mnt/scripts/script.yaml"
+          "--script-path", "/mnt/scripts/simple.yaml"
         ]
         volumeMounts:
         - name: scripts
