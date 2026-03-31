@@ -6,7 +6,7 @@ metadata:
     app: bootstrap-service
 spec:
   type: ClusterIP
-  clusterIP: 10.96.0.10
+  clusterIP: 10.96.0.100
   ports:
   - port: 22137
     protocol: TCP
