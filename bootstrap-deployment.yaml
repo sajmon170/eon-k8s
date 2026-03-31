@@ -22,7 +22,8 @@ spec:
           "--stdout",
           "--log-level", "debug",
           "--bootstrap-mode",
-          "--secret-key-seed", "1"
+          "--secret-key-seed", "1",
+          "--script", "[!Wait {time: 2s}]"
         ]
         ports:
         - containerPort: 22137
