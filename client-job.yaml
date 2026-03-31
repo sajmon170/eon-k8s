@@ -12,6 +12,7 @@ spec:
           "eon-client",
           "--stdout",
           "--log-level", "debug",
+          "--bootstrap-addr", "10.96.0.100",
           "--script-path", "/mnt/scripts/simple.yaml"
         ]
         volumeMounts:
