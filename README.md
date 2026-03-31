@@ -2,7 +2,7 @@
 This is a repostitory containing Kubernetes manifest files for testing
 multi-node EON setups.
 
-To use it clone the repo and then run
+To use it run
 ```bash
-kubectl apply -f ./eon-k8s
+kubectl apply -k https://github.com/sajmon170/eon-k8s
 ```
