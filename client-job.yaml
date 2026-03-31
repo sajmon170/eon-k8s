@@ -23,7 +23,7 @@ spec:
         configMap:
           name: simple-wait
           items:
-          - key: "simple.yaml"
-            path: "simple-wait-script"
+          - key: "simple-wait-script"
+            path: "simple.yaml"
       restartPolicy: Never
   backoffLimit: 4
