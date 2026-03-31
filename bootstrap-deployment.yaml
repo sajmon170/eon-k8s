@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: eon-client
-        image: sajmon/eon-client
+        image: 10.1.1.18:5000/eon-client
         command: [
           "eon-client",
           "--stdout",
