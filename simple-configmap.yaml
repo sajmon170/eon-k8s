@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: simple-wait
 data:
-  simple-wait-script:
+  simple-wait-script: |
     - !Wait
       time: 10s
