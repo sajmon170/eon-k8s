@@ -5,4 +5,4 @@ metadata:
 data:
   simple-wait-script: |
     - !Wait
-      time: 10s
+      time: 100s
